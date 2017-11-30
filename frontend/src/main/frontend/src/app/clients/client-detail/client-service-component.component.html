@@ -1,0 +1,34 @@
+<div class="panel panel-default marg">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Dostępne usługi</div>
+
+  <!-- List group -->
+  <div class="list-group scroll">
+    <ul>
+      <li *ngFor = "let c of services; let i = index" (click)="activeService(c)"
+        [ngClass] ="{active: isActive(c)}"
+      ><a class="list-group-item">{{c.name}}</a></li>
+    </ul>
+  </div>
+
+  <br>
+  <div class="pad">
+  <p>Usługi klienta</p>
+  <div class="list-group scroll">
+    <ul>
+      <li *ngFor = "let c of activeTab; let i = index">
+        <table>
+          <tr>
+            <td><p class="wys">{{c.name}}</p></td>
+            <td> <input
+              type="text" [(ngModel)]="descritionList[i]"></td>
+          </tr>
+        </table>
+      </li>
+
+    </ul>
+  </div>
+
+  <button (click)="onSaveService()" class="btn btn-info">Dodaj</button>
+  </div>
+</div>

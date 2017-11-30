@@ -1,0 +1,6 @@
+<a style="cursor: pointer;border-bottom: 1px solid #ddd " class="list-group-item clearfix"
+   [routerLink]="[index]"
+   routerLinkActive="active">
+  {{service.id}}.{{service.name}}: {{service.description | shortPipe:30}}
+</a>
+

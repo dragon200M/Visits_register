@@ -1,0 +1,8 @@
+.marg {
+  margin-top: 54px;
+  padding: 10px 10px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}

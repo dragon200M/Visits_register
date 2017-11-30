@@ -1,0 +1,33 @@
+.scroll{
+  height:600px;
+  overflow:hidden;
+  overflow-y:scroll;
+}
+@media (max-width: 750px) {
+  .scroll{
+    height:300px;
+    overflow:hidden;
+    overflow-y:scroll;
+  }
+
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+a:hover {
+  background: #e7e7e7;
+}
+
+.pad {
+  padding: 10px;
+}
+
+.wys {
+  position: relative;
+  display: block;
+  padding: 4px 10px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}

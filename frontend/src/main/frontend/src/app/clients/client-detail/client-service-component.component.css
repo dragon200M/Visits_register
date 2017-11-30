@@ -1,0 +1,40 @@
+.active a{background-color: #5bc0de;
+  border-color: 5bc0de;
+  color: #fff;
+  font-weight: 450;
+}
+.marg {
+  margin-top: 53px;
+}
+.pad {
+  padding: 10px;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  text-align: left;
+  width: 90%;
+  padding-right: 2px;
+}
+
+
+.wys {
+  position: relative;
+  display: block;
+  padding: 4px 10px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+input {
+  height: 29px;
+  padding-left: 2px;
+}

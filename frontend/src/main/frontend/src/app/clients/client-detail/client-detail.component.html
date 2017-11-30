@@ -1,0 +1,46 @@
+<div class="row marg">
+<div class="col-xs-12">
+  <form [formGroup]="clientForm" (ngSubmit)="onSubmit()">
+
+      <div class="col-xs-12">
+        <div class="form-group">
+          <label for="name">Imię</label>
+          <input
+            type="text"
+            id="name"
+            formControlName="name"
+            class="form-control"
+          >
+        </div>
+      </div>
+
+
+      <div class="col-xs-12">
+        <div class="form-group">
+          <label for="surname">Nazwisko</label>
+          <input
+            type="text"
+            id="surname"
+            formControlName="surname"
+            class="form-control"
+          >
+        </div>
+      </div>
+
+
+      <div class="col-xs-12">
+        <button
+          type="submit"
+          class="btn btn-success"
+          [disabled]="!clientForm.valid"
+         >Zapisz</button>
+        <button type="button" class="btn btn-danger" (click)="onCancel()">Anuluj</button>
+        <button type="button" class="btn btn-danger" [disabled]="!editMode" (click)="onDelete()">Usuń</button>
+      </div>
+
+  </form>
+</div>
+</div>
+
+
+

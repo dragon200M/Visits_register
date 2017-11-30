@@ -1,0 +1,14 @@
+.scroll{
+  height:600px;
+  overflow:hidden;
+  overflow-y:scroll;
+}
+@media (max-width: 750px) {
+  .scroll{
+    height:300px;
+    overflow:hidden;
+    overflow-y:scroll;
+  }
+
+}
+

@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-lg-12" style="margin-bottom: 20px">
+    <button class="btn btn-success" (click)="onNewService()">Nowy usługa</button>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Usługi</div>
+
+  <!-- List group -->
+  <div class="list-group scroll">
+
+    <app-service-item
+      *ngFor="let service of  services; let i = index"
+      [service]="service"
+      [index] = "i+1"
+    ></app-service-item>
+  </div>
+</div>

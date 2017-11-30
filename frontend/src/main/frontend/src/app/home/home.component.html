@@ -1,0 +1,39 @@
+<div class="row">
+
+  <div class="col-sm-6">
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Klienci</div>
+      <!-- List group -->
+      <div class="list-group scroll">
+        <ul>
+          <li *ngFor = "let c of clients; let i = index"
+          ><a style="cursor: pointer;border-bottom: 1px solid #ddd " class="list-group-item clearfix"
+              (click)="getAllClients(i+1)">{{c.id}}.{{c.name}} {{c.surname}}</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-sm-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">Wizyty</div>
+      <div class="pad">
+      <div *ngIf="clientsServices?.length >0">
+        <ul class="list-group">
+          <li *ngFor = "let c of clientsServices; let i = index" class="wys"
+          >{{c.date.substring(0,5)}}. {{c.service}} {{c.desc}}</li>
+        </ul>
+
+      </div>
+      <div *ngIf="clientsServices?.length < 1">
+        <h5 class="text-uppercase">Brak usług dla tego klienta</h5>
+      </div>
+      <button class="btn btn-info" (click)="goToClient()">Dodaj</button>
+    </div>
+    </div>
+
+  </div>
+
+
+</div>

@@ -1,0 +1,41 @@
+a {
+  width: 99%;
+}
+a:hover {
+  background: #e7e7e7;
+}
+
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+  background-color: #1d3f5d;
+}
+
+.list-group-item {
+  float:left;
+}
+
+li {
+  padding: 0;
+  width: 100%;
+}
+li:first-child{
+
+}
+ul {
+  margin: 0;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  text-align: left;
+  width: 90%;
+  padding-right: 2px;
+
+}
+
+
+
